@@ -2,6 +2,7 @@
   <img src="./public/logo/veeno.png" width="120" alt="VeenoX Logo" />
   
   # VeenoX
+  ## Perpetual Trading Platform
   
   [![Live Demo](https://img.shields.io/badge/Live%20Demo-veeno--x.vercel.app-blue?style=for-the-badge&logo=vercel)](https://veeno-x.vercel.app/)
   [![Next.js](https://img.shields.io/badge/Next.js-13+-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
