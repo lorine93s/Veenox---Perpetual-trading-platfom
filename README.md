@@ -32,6 +32,7 @@ VeenoX is a cutting-edge perpetual decentralized exchange (DEX) built on the Ord
 - **Package Manager**: npm
 - **Deployment**: Vercel
 
+
 ## 🚀 Quick Start
 
 ### Prerequisites
