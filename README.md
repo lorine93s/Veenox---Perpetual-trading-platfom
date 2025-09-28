@@ -3,7 +3,7 @@
   
   # VeenoX
   
-  [![Live Demo](https://img.shields.io/badge/Live%20Demo-veeno--x.vercel.app-blue?style=for-the-badge&logo=vercel)](https://veeno-x.vercel.app/)
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-veeno--x.vercel.app-blue?style=for-the-badge&logo=vercel)](https://veenox.xyz)
   [![Next.js](https://img.shields.io/badge/Next.js-13+-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
