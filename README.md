@@ -119,5 +119,5 @@ If you have any questions or need help, please:
 ---
 
 <div align="center">
-  Made with ❤️ by the VeenoX Team
+  Made with ❤️ by the VeenoX Team(@lorine93s and others)
 </div>
