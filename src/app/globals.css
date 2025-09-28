@@ -1,0 +1,246 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: rgba(20, 20, 20, 1);
+  --background-start-rgb: rgba(20, 20, 20, 1);
+  --background-end-rgb: rgba(20, 20, 20, 1);
+  --toastify-color-info: #346edb;
+  --toastify-color-success: rgb(14 203 129);
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: rgb(234 57 67);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: rgba(10, 10, 10, 1);
+    --background-start-rgb: rgba(10, 10, 10, 1);
+    --background-end-rgb: rgba(10, 10, 10, 1);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #1b1d22;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--foreground-rgb) var(--background-end-rgb);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.mix-blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.bg-change-green {
+  filter: invert(1) sepia(1) saturate(10) hue-rotate(100deg);
+}
+
+.bg-change-red {
+  filter: invert(1) sepia(1) saturate(10) hue-rotate(-100deg);
+}
+
+input {
+  border: none;
+  background: none;
+}
+
+input:focus {
+  outline: none;
+  border-color: initial; /* Remplacez 'initial' par la couleur de votre choix si vous voulez garder une bordure spécifique */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Pour Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-slider {
+  background: #ff0000;
+  border: 1px solid yellow;
+  color: red;
+}
+
+.custom-slider-bar {
+  background: orange;
+  border: 1px solid orange;
+  color: orange;
+}
+
+.custom-slider-handle {
+  background: green;
+  border: 1px solid green;
+  color: green;
+}
+
+.bar {
+  height: 20px;
+  margin: 1px 0;
+}
+
+.bid {
+  background-color: #00800080; /* Green with opacity */
+}
+
+.ask {
+  background-color: #ff000080; /* Red with opacity */
+}
+
+.price,
+.volume,
+.total-doge,
+.total-usdc {
+  width: 80px;
+  text-align: right;
+}
+
+.volume-bar {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15px;
+  cursor: col-resize;
+  z-index: 10;
+  /* background-color: #836ef9; */
+}
+
+.resizer:hover {
+  /* background-color: #836ef9; */
+}
+.resizer:nth-child(2) {
+  left: calc(60% + 0px);
+}
+.resizer:nth-child(2) {
+  left: calc(80% + 0px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-width {
+  width: 100%;
+}
+
+.chart {
+  height: calc(100% - 108px);
+}
+
+@media (max-width: 1168px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-width {
+    width: calc(100% - 300px);
+  }
+
+  .chart {
+    height: 450px;
+  }
+
+  .grid > div {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #333;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-width {
+    width: 100%;
+  }
+  .chart {
+    height: 450px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.resizerY {
+  background: red;
+  height: 5px;
+  cursor: row-resize;
+  flex-shrink: 0;
+  background-color: transparent;
+}
+
+.resizerY:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.text-outlined {
+  background-image: linear-gradient(
+    45deg,
+    #fff,
+    #000
+  ); /* Couleur des contours (dégradé ou couleur unie) */
+  background-clip: text; /* Découpe le fond pour qu'il soit visible uniquement à l'intérieur des lettres */
+  -webkit-background-clip: text; /* Support pour les navigateurs WebKit (Chrome, Safari) */
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.resizer-last {
+  cursor: ew-resize;
+  background-color: transparent;
+  width: 5px;
+  height: 100%;
+}
+
+.tv-floating-toolbar,
+.tvcolorpicker-popup,
+.chart-popup {
+  background-color: #ff0000 !important;
+}
+
+/* Personnalisation du texte dans les popups */
+.tv-floating-toolbar *,
+.tvcolorpicker-popup *,
+.chart-popup * {
+  color: #ff0000 !important;
+}
